@@ -9,7 +9,7 @@ author: Brian Boyko
 
 Well the donate page - arguably the hardest part of this whole mess - is done. Yay!
 
-![Image](http://i.imgur.com/rAsrKG7.jpg)
+<img style="margin:10px; border 2px solid black; float:left;" src="http://i.imgur.com/rAsrKG7.jpg">
 
 I got it working on my own, but I was using onclick="function()" events. There's nothing wrong with that, but it's considered the "incorrect" way to do things, according to the principle of "unobtrusive Javascript" - i.e., "don't put javascript in your HTML code."<!-- break -->
 
