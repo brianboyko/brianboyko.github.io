@@ -9,9 +9,7 @@ author: Brian Boyko
 
 Well the donate page - arguably the hardest part of this whole mess - is done. Yay!
 
-<img style="margin:10px; border 2px solid black; float:left;" src="http://i.imgur.com/rAsrKG7.jpg">
-
-I got it working on my own, but I was using onclick="function()" events. There's nothing wrong with that, but it's considered the "incorrect" way to do things, according to the principle of "unobtrusive Javascript" - i.e., "don't put javascript in your HTML code."<!-- break -->
+<img style="margin:10px; border 2px solid black; float:left;" src="http://i.imgur.com/rAsrKG7.jpg">I got it working on my own, but I was using onclick="function()" events. There's nothing wrong with that, but it's considered the "incorrect" way to do things, according to the principle of "unobtrusive Javascript" - i.e., "don't put javascript in your HTML code."<!-- break -->
 
 I had a bit of trouble with "addEventListener" events - the correct way - as the code was executing before I pressed the button.  On Freenode, in ##programming, [Twey](https://github.com/Twey/) ended up helping me figure out that doing .addEventListener("click", function()); executes the function right away, so if I wanted it to work, I had to addEventListener("click", function);
 
