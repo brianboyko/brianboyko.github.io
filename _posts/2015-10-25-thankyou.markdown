@@ -23,7 +23,7 @@ I’m telling you all this because I wanted to know that you’ve helped.  Whet
 
 I wanted to share some of the projects I’ve done with you, so you can see what I’ve been up to.  
 
-* * *
+---
 
 **Solo Project: [Who Wants To Be A Millionaire](http://wwtbam.herokuapp.com) & Chat Room.**
 
@@ -53,7 +53,7 @@ This being our biggest project, we hit some major stumbling blocks. We couldn’
 
 This is key: in order to get the site up and running, we used MongoDB, React.JS, and Socket.IO -- technologies that were not covered in the MakerSquare core curriculum.  That’s the thing I learned most from MakerSquare - how to teach ourselves and dive into new technologies.  
 
-* * *
+---
 
 So, what’s next?
 
