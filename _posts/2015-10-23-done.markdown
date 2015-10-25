@@ -2,7 +2,7 @@
 layout: post
 title:  Done
 date:   2015-10-23
-categories: makersquare - development
+categories: makersquare development
 stylesheet: page.css
 author: Brian Boyko
 ---

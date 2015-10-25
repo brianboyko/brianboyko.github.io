@@ -1,8 +1,8 @@
 ---
-layout: Thank You For Everything!
-title:  Done
+layout: post
+title:  Thank You For Everything!
 date:   2015-10-25
-categories: makersquare - development
+categories: makersquare development
 stylesheet: page.css
 author: Brian Boyko
 ---
