@@ -3,87 +3,71 @@ layout: default
 ---
 
 <!--
-	Twenty by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Twenty by HTML5 UP
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-		
-		<!-- Main -->
-			<article id="main">
+    
+    <!-- Main -->
+      <article id="main">
 
-				<header class="special container">
-					<span class="icon fa-mobile"></span>
-					<h2>And finally there's <strong>No Sidebar</strong></h2>
-					<p>Where that in the center faces the nameless horrors alone.</p>
-				</header>
-					
-				<!-- One -->
-					<section class="wrapper style4 container">
-					
-						<!-- Content -->
-							<div class="content">
-								<section>
-									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-									<header>
-										<h3>Dolore Amet Consequat</h3>
-									</header>
-									<p>Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum massa. Morbi eu faucibus massa. Aliquam massa urna, imperdiet sit amet mi non, bibendum euismod est. Curabitur mi justo, tincidunt vel eros ullamcorper, porta cursus justo. Cras vel neque eros. Vestibulum diam.</p>
-									<p>Vestibulum diam quam, mollis at consectetur non, malesuada quis augue. Morbi tincidunt pretium interdum. Morbi mattis elementum orci, nec dictum porta cursus justo. Quisque ultricies lorem in ligula condimentum, et egestas turpis sagittis. Cras ac nunc urna. Nullam eget lobortis purus. Phasellus vitae tortor non est placerat tristique. Sed id sem et massa ornare pellentesque. Maecenas pharetra porta accumsan. </p>
-									<p>In vestibulum massa quis arcu lobortis tempus. Nam pretium arcu in odio vulputate luctus. Suspendisse euismod lorem eget lacinia fringilla. Sed sed felis justo. Nunc sodales elit in laoreet aliquam. Nam gravida, nisl sit amet iaculis porttitor, risus nisi rutrum metus, non hendrerit ipsum arcu tristique est.</p>
-								</section>
-							</div>
+        <header class="special container">
+          <span class="icon fa-bolt"></span>
+          <h2>Projects</h2>
+        </header>
+          
+        <!-- One -->
+          <section class="wrapper style4 container">
+          
+            <!-- Content -->
+              <div class="content">
+                <section>
+                  <a href="http://dgqwz.herokuapp.com" class="image featured"><img src="images/digiquiz.png" alt="" /></a>
+                  <header>
+                    <h3><a href="http://dgqwz.herokuapp.com">DigiQuiz</a></h3>
+                    <h4>Keep students engaged in class through interactive educational gameplay</h4>
+                  </header>
+                  <p>Team "Square Pegs": Brian Boyko (Product Owner), Juan Sierra (Project Manager), Peter Do (Full-Stack Developer)</p>
+                  <p>The problem: Student Enagement</p>
+                  <p>Teachers today have an impossible problem: keeping students engaged while preparing them adequately for common core standardized testing. Traditional "edutainment" games (Reader Rabbit, Carmen Sandiego, et. al.) are usually solo endeavors and teach only what the software has programmed. </P>
+                  <p>We wanted a system that: A) Allowed the whole class to get involved, B) Allowed the teacher to specify or amend curriculum. </p>
+                  DigiQuiz is a mobile-enabled, real-time question-and-answer platform that keeps students engage in class through interactive educational gameplay. (In other words, it plays Jeopardy). </p>
+                  <p>Teachers control the game from a device or laptop, while students can buzz in.  Teachers can then see who buzzed in first. Students can also leave live feedback on how difficult they found the question, giving them real-time data into what subjects the class needs the most review on.</p>
+                  <p>The Tech Stack:
+                    <UL>
+                      <LI><strong>Database: MongoDB</strong><BR>
+                      While our data was highly relational, the flexibility of MongoDB allowed us to rapidly iterate and develop new features. </LI>
+                      <LI><strong>Routing: Express.js</strong><BR>
+                      Express.js fit well for both our RESTful database API calls and serving up views. </LI>
+                      <LI><strong>Websockets: Socket.IO</strong><BR>
+                      We used standard jQuery AJAX/API calls to the database but for actually serving that data in real time to a specific subset of users, Socket.IO was the most powerful and flexible solution we found.</LI>
+                      <LI><strong>View: React.js</strong><BR>
+                      Because we envisioned this as something students would use on mobile devices (with limited bandwidth requirements) we wanted to use a VirtualDOM system to cut down on the rendering overhead on older mobile devices. </LI>
+                    </UL>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/djVlG4gGOp4" frameborder="0" allowfullscreen></iframe>
+                    <HR>
+                </section>
+                <section>
+                  <a href="http://spkr.herokuapp.com" class="image featured"><img src="images/spkr.png" alt="" /></a>
+                  <header>
+                    <h3><a href="http://spkr.herokuapp.com">Speak</a></h3>
+                    <h4>Feedback for Public Speakers</h4>
+                  </header>
+                  <p>Team "Stacks-on-Stacks": Brian Boyko (Project Manager), Peter Do (Front-End Developer), Vaishnavi Reddi (Product Owner), Dan Moser (Full-Stack Developer), Josh Stevens (Full-Stack Developer)</p>
+                  <p><em>Legacy Project</em></p>
+                  <p>This was a legacy project - we were given a half-developed greenfield project from another team, and we were asked to add features</p>
+                  <p>The Tech Stack: MEAN Stack</p>
+                  <p>Features Added</p>
+                    <UL>
+                      <LI><strong>Custom Criteria for Feedback</strong><BR>
+                      The original app had nine categories hard-coded into the system, we added the ability to add and remove categories both stored on the database and displayed via the data visualization library, D3.JS</LI>
+                      <LI><strong>Comments Form</strong><BR>
+                      We allowed for evaluators to leave custom feedback for the form.</LI>
+                      <LI><strong>Responsive Redesign</strong><BR>
+                      We improved the UI by creating a responsive design (including the use of modals) with Bootstrap.css/Bootstrap.js</LI>
+                    </UL>
 
-					</section>
+                </section>
 
-				<!-- Two -->
-					<section class="wrapper style1 container special">
-						<div class="row">
-							<div class="4u">
-							
-								<section>
-									<header>
-										<h3>This is Something</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="#" class="button small">Learn More</a></li>
-										</ul>
-									</footer>
-								</section>
-							
-							</div>
-							<div class="4u">
-							
-								<section>
-									<header>
-										<h3>Also Something</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="#" class="button small">Learn More</a></li>
-										</ul>
-									</footer>
-								</section>
-							
-							</div>
-							<div class="4u">
-							
-								<section>
-									<header>
-										<h3>Probably Something</h3>
-									</header>
-									<p>Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.</p>
-									<footer>
-										<ul class="buttons">
-											<li><a href="#" class="button small">Learn More</a></li>
-										</ul>
-									</footer>
-								</section>
-							
-							</div>
-						</div>
-					</section>
-					
-			</article>
+          
+      </article>
