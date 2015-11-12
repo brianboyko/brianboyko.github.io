@@ -37,7 +37,7 @@ DigiQuiz is a mobile-enabled, real-time question-and-answer platform that keeps 
 
 Teachers control the game from a device or laptop, while students can buzz in.  Teachers can then see who buzzed in first. Students can also leave live feedback on how difficult they found the question, giving them real-time data into what subjects the class needs the most review on.
 
-**Tech Stack:**
+**Tech Stack:** 
 
 * MongoDB
 * Express.js
