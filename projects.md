@@ -5,6 +5,60 @@ omit_title_suffix: true
 cssid: projects
 ---
 
+{% capture ionic_head %}    
+[WhichLang](http://whichlang.herokuapp.com)
+{% endcapture %}
+
+{% capture ionic_desc %}    
+Coding Challenge (MEAN Stack + Ionic/Cordova)
+{% endcapture %}
+
+{% capture ionic_source %}
+[Source](https://github.com/brianboyko/whichlanguage
+{% endcapture %}
+
+{% capture ionic_image %}
+<img src="images/ionic.png" width="100%" />
+{% endcapture %}
+
+{% capture ionic_main %}
+
+**Coding Challenge**
+
+This was a coding challenge for a "MEAN Stack developer position" at a Austin-based custom app development firm. Because the company specializes in software for mobile app development, I was asked to use Ionic Framework (which itself is built on top of Angular). 
+
+The assignment was to create a buzzfeed-like personality test (I chose "Which programming language should you study"), which stored user's login information to a MongoDB, was deployable on Heroku (including DB), and could be packaged, via Cordova, to an Android *.apk file.  Users should get an e-mail sent to their address with their results.  
+
+Even though I had never worked with Ionic or Cordova before, I considered it a point of pride that I was able to understand them quickly and apply what I learned.  
+
+**Tech Stack:** 
+
+* MongoDB
+* Express.js
+* Angular.js
+* Node.js
+* Ionic Framework
+* Cordova
+* NodeMailer (for email capabilities)
+
+{% endcapture %}
+
+{% capture ionic_team %}
+Solo project.
+{% endcapture %}
+
+
+
+
+
+
+
+
+
+
+
+
+
 {% capture digiquiz_head %}    
 [Digiquiz](http://dgqwz.herokuapp.com)
 {% endcapture %}
