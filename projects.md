@@ -14,7 +14,7 @@ Coding Challenge (MEAN Stack + Ionic/Cordova)
 {% endcapture %}
 
 {% capture ionic_source %}
-[Source](https://github.com/brianboyko/whichlanguage
+[Source](https://github.com/brianboyko/whichlanguage)
 {% endcapture %}
 
 {% capture ionic_image %}
