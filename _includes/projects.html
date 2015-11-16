@@ -7,6 +7,28 @@
     <!-- Content -->
     <div class="content">
 
+      <section class="project">
+        <div class="col-1-3">
+          <h3 class="head">{{ ionic_head | markdownify }}</h3>
+          <div>
+            {{ ionic_image }}
+          </div>
+          <div class="desc">
+            {{ ionic_desc | markdownify }}
+          </div>
+          <h3 class="source">{{ digiquiz_source | markdownify }}</h3>
+          <h3>{{ digiquiz_video | markdownify }}</h3>
+          <div class="team">
+            {{ ionic_team | markdownify }}
+          </div>
+          <div></div>
+        </div>
+        <div class="col-2-3 mainbar">
+          {{ ionic_main | markdownify }}
+        </div>
+        <div style="clear:both;"></div>
+      </section>
+
 
       <section class="project">
         <div class="col-1-3">
@@ -18,8 +40,7 @@
             {{ digiquiz_desc | markdownify }}
           </div>
           <h3 class="source">{{ digiquiz_source | markdownify }}</h3>
-          <h3>{{ digiquiz_video | markdownify }}</h3>
-          <div class="team">
+                    <div class="team">
             {{ digiquiz_team | markdownify }}
           </div>
           <div></div>
