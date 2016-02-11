@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "How's it been?""
+title:  "How's it been?"
 date:   2016-02-10
-categories: Javascript redux sql
+categories: javascript redux sql
 stylesheet: page.css
 author: Brian Boyko
 ---
