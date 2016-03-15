@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gulp, and Windows"
+title:  "Windows"
 date:   2016-03-15
 categories: javascript windows
 stylesheet: page.css
