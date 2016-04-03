@@ -13,9 +13,9 @@ I'm just gonna write my thoughts here - feel free to agree to disagree.
 
 Cycorp uses a single subversion repository for the company. Coming from the Node.js/GitHub world, I thought at first that it was crazy! A single repository?  But there are some advantages.  
 
-* You can reuse common libraries across projects. 
-* There's only a single place where you look for code. 
-* You have a single authorization and single commit number.
+*   > You can reuse common libraries across projects. 
+*   > There's only a single place where you look for code. 
+*   > You have a single authorization and single commit number.
 
 Now for a Node.js developer, these very real concerns are less concerning. 
 
@@ -37,11 +37,13 @@ What this means is that I can actually do a lot of things quickly that Subversio
 
 Most importantly to me is the idea of git's branching capabilities.  Typically, I'll have something like these branches in git. 
 
+```
     > master
     > master-deployment
     > master/[feature] 
     > refactor
     > refactor/[feature]
+```
 
 My workflow is something like this: 
 
@@ -57,8 +59,8 @@ As for refactor and refactor-feature, those branches are for very large changes 
 
 So, during a typical workday, I:
 
-* have 5-6 branches on my projects
-* am making 6-8 commits per day.
+*    > have 5-6 branches on my projects
+*    > am making 6-8 commits per day.
 
 Now, one of the things that we don't do much at Cycorp that I think we absolutely should adopt is multiple developers working on the same codebase, pair programming, and all-in-all using the collaboration tools that are part of Git.  For this, we'd need to either use some form of cloud-based version tracker (like BitBucket) or install GitLab on our local network. 
 
@@ -66,6 +68,7 @@ Here's why it's such a big deal:
 
 With Gitlab, we'd be able to have a single remote repository for each seperate project, and because of branching, different developers could work on different features of the same codebase *at the same time.*  This happened a lot with my thesis project, Digiquiz.  I'd be working on connecting the websockets, Juan would be working on developing unit tests, Pete would be working on Passport authentication... we'd all be working off the same repo, but in different branches.  So it would be something like this: 
 
+```
     GitHub: (origin)
       > master
       > feature/websockets-bb
@@ -83,13 +86,14 @@ With Gitlab, we'd be able to have a single remote repository for each seperate p
     My machine: 
       > master
       > feature/websockets-bb. 
+```
 
 Juan was the keeper of the keys to Master.  Our process would go like this: 
 
-* Pete would complete his feature (authorization).  He'd make sure his master was synced with the master branch on the server by running "git pull origin master".  He then pushes his feature branch to the origin's feature/authentication-pd branch, and uses the GitHub tools to send a pull request.  Juan would take a look at the changes and diffs that Pete would make, and if they were clean and good, he would merge them into the remote master.  Pete then works on a different feature or bugfix. 
+Pete would complete his feature (authorization).  He'd make sure his master was synced with the master branch on the server by running "git pull origin master".  He then pushes his feature branch to the origin's feature/authentication-pd branch, and uses the GitHub tools to send a pull request.  Juan would take a look at the changes and diffs that Pete would make, and if they were clean and good, he would merge them into the remote master.  Pete then works on a different feature or bugfix. 
 
 
-* At this point, Juan and my local master branches are behind master.  Let's say I'd complete my feature next.  I do the same thing as Pete - I sync my master branch with the one on the server by "git pull origin master".  It lets me know that there have been changes made to master (Pete's authentication code.) What I then do is *rebase* the code in my branch with the master on the server.  This would replay any changes that Juan made to the sourcecode alongside changes that I made to the source code. It might go through without problems, or there might be a "merge conflict" which would be my responsibility to resolve before I send the pull request to Juan for approval.  
+At this point, Juan and my local master branches are behind master.  Let's say I'd complete my feature next.  I do the same thing as Pete - I sync my master branch with the one on the server by "git pull origin master".  It lets me know that there have been changes made to master (Pete's authentication code.) What I then do is *rebase* the code in my branch with the master on the server.  This would replay any changes that Juan made to the sourcecode alongside changes that I made to the source code. It might go through without problems, or there might be a "merge conflict" which would be my responsibility to resolve before I send the pull request to Juan for approval.  
 
 In this way, we all have access to the latest code, we can work on the same code in isolation, and if someone's stuck, we can quickly pull down their branch and look at the code together in pair-programming (even, with the help of floobits, if one or both of us are working remotely.) 
 
