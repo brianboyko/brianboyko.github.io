@@ -13,9 +13,9 @@ I'm just gonna write my thoughts here - feel free to agree to disagree.
 
 Cycorp uses a single subversion repository for the company. Coming from the Node.js/GitHub world, I thought at first that it was crazy! A single repository?  But there are some advantages.  
 
-*   > You can reuse common libraries across projects. 
-*   > There's only a single place where you look for code. 
-*   > You have a single authorization and single commit number.
++ You can reuse common libraries across projects. 
++ There's only a single place where you look for code. 
++ You have a single authorization and single commit number.
 
 Now for a Node.js developer, these very real concerns are less concerning. 
 
@@ -59,8 +59,8 @@ As for refactor and refactor-feature, those branches are for very large changes 
 
 So, during a typical workday, I:
 
-*    > have 5-6 branches on my projects
-*    > am making 6-8 commits per day.
++ have 5-6 branches on my projects
++ am making 6-8 commits per day.
 
 Now, one of the things that we don't do much at Cycorp that I think we absolutely should adopt is multiple developers working on the same codebase, pair programming, and all-in-all using the collaboration tools that are part of Git.  For this, we'd need to either use some form of cloud-based version tracker (like BitBucket) or install GitLab on our local network. 
 
