@@ -9,3 +9,5 @@ github_username:  brianboyko
 excerpt_separator: "<!-- break -->"
 # Build settings
 markdown: kramdown
+gems:
+  - jekyll-feed
