@@ -17,7 +17,7 @@ Of course, Javascript being Javascript, between the two months when I started th
 
 You can get a quick overview of the differences here:
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/83v8cdvGfeA" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/83v8cdvGfeA" frameborder="0" allowfullscreen> </iframe>
 
 Now, everything in that video is true.  Redux is more boilerplate, more complexity, more everything. But all things considered, I still think Redux was the correct choice for *this project.*
 
