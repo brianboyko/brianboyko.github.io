@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why I'm using Redux instead of MobX (and why both are awesome)"
-date:   2016-04-21
+date:   2016-04-27
 categories: React Flux MobX Redux
 stylesheet: page.css
 author: Brian Boyko
