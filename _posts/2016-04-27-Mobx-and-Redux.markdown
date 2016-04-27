@@ -5,6 +5,7 @@ date:   2016-04-27
 categories: React Flux MobX Redux
 stylesheet: page.css
 author: Brian Boyko
+youtubeId: 83v8cdvGfeA
 ---
 
 This is a bit of a #humblebrag but I took a big risk (and Cycorp let me take that risk) by refactoring the MathPanel from our previous code to solution based on Redux. And I have to say, it's producing dividends.
@@ -17,7 +18,7 @@ Of course, Javascript being Javascript, between the two months when I started th
 
 You can get a quick overview of the differences here:
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/83v8cdvGfeA" frameborder="0" allowfullscreen> </iframe>
+{% include youtubePlayer.html id=page.youtubeId %}
 
 Now, everything in that video is true.  Redux is more boilerplate, more complexity, more everything. But all things considered, I still think Redux was the correct choice for *this project.*
 
