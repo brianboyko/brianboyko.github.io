@@ -1,6 +1,7 @@
 # Site settings
 title: Brian Boyko
 email: brian.boyko@gmail.com
+name: Brian Boyko, Full Stack Engineer
 description: "Blog of Brian Boyko, full-stack software engineer."
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "brianboyko.github.io" # the base hostname & protocol for your site
@@ -9,5 +10,3 @@ github_username:  brianboyko
 excerpt_separator: "<!-- break -->"
 # Build settings
 markdown: kramdown
-gems:
-  - jekyll-feed
