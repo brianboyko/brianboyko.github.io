@@ -161,7 +161,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 10px;
 }
 
 .page-heading {
@@ -169,7 +169,6 @@
 }
 
 .post-list {
-    margin-left: 10px;
 
     > li {
         margin-bottom: $spacing-unit;
