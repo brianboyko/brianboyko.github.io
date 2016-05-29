@@ -449,7 +449,6 @@
 		}
 
 			ul.buttons li:first-child {
-				padding: 0;
 			}
 
 		ul.buttons.vertical li {
@@ -458,7 +457,6 @@
 		}
 
 			ul.buttons.vertical li:first-child {
-				padding: 0;
 			}
 
 /* Table */
